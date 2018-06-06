@@ -47,6 +47,10 @@ public class Date {
     {
         innerDate =  LocalDate.of(year, month, day);
     }
+    public  Date(LocalDate date)
+    {
+        innerDate=date;
+    }
     /**
      * @return The day of the Date
      * */

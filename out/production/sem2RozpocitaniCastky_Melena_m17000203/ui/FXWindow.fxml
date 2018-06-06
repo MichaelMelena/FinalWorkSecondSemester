@@ -8,12 +8,18 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.RadioButton?>
 <BorderPane fx:controller="ui.FXWindowController" prefHeight="500" prefWidth="550" xmlns:fx="http://javafx.com/fxml" >
     <padding><Insets top="35" right="25" bottom="10" left="25"/></padding>
 
         <left>
             <VBox alignment="TOP_CENTER" spacing="10">
-                <Button text="Delete"/>
+                <HBox spacing=" 10" alignment="CENTER">
+                    <Button text="Delete" onAction="#removeListItem"/>
+                    <Button text="Show" onAction="#showListItem"/>
+                </HBox>
+
                     <ListView fx:id="listView" prefWidth="150" prefHeight="350" />
             </VBox>
         </left>
@@ -29,9 +35,9 @@
                     <DatePicker fx:id="endDatePicker" GridPane.rowIndex="1" GridPane.columnIndex="4" GridPane.columnSpan="4"/>
                     <Button  text="Clear end date" GridPane.rowIndex="2" GridPane.columnIndex="5" GridPane.columnSpan="2"/>
                 </GridPane>
-
-
-                <Label fx:id="inputLabel" text="Input two date and value:"/>
+                <HBox alignment="CENTER_LEFT">
+                    <Label fx:id="inputLabel" text="Input:"/>
+                </HBox>
                 <TextField  fx:id="inputTextField" promptText="start_date - end_date = value OR just value " />
                 <GridPane fx:id="inputGridPane" hgap="10"  alignment="CENTER">
                     <padding><Insets top="10" right="25" bottom="25" left="25"/></padding>
@@ -40,10 +46,19 @@
                     <Button fx:id="inputClear" text="Clear" onAction="#clearInput" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
                     <Button fx:id="inputSubmit" text="Submit" onAction="#submitInput" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
                 </GridPane>
+
+
+                    <HBox spacing=" 20" alignment="CENTER" >
+
+                            <RadioButton fx:id="rbDays" onAction="#radioButtonSelected" text="Days" />
+                            <RadioButton fx:id="rbMonths" text="Months" />
+
+                    </HBox>
+
                 <Label fx:id="outputLabel" text="Output:"/>
-                <ScrollPane fitToWidth="true"  hbarPolicy="NEVER">
+
                     <TextArea fx:id="outputTextArea" editable="false" wrapText="true"    />
-                </ScrollPane>
+
                 <GridPane fx:id="outputGridPane"  alignment="CENTER" hgap="20">
                     <padding><Insets top="10" right="25" bottom="25" left="25"/></padding>
                     <Button fx:id="outputClear" text="Clear" onAction="#clearOutput" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2" alignment="CENTER"/>

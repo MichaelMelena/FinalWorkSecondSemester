@@ -10,12 +10,14 @@ public class FXWindow extends Application {
 
         @Override
     public void start(Stage primaryStage) throws Exception{
-
-        Parent root = FXMLLoader.load(getClass().getResource("FXWindow.fxml"));
-
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXWindow.fxml"));
+        Parent root = fxmlLoader.load();
+            FXWindowController controller=fxmlLoader.getController();
+        controller.setPrimaryStage(primaryStage);
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 600, 450));
         primaryStage.show();
+
     }
 
 
