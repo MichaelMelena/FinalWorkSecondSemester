@@ -23,9 +23,9 @@ public class Date {
      * @return The new Date object with parsed values from parameters
      * @throws  NumberFormatException if one of parameters could not be parsed.
      * */
-    public static  LocalDate init(String text) throws DateTimeParseException
+    public static  Date init(String text) throws DateTimeParseException
     {
-        return LocalDate.parse(text, timeFromat);
+        return new Date(LocalDate.parse(text, timeFromat));
     }
     /**
      * @param year The year to be tested for a leap year.

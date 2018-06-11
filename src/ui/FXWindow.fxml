@@ -10,18 +10,31 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleButton?>
 <BorderPane fx:controller="ui.FXWindowController" prefHeight="500" prefWidth="550" xmlns:fx="http://javafx.com/fxml" >
     <padding><Insets top="35" right="25" bottom="10" left="25"/></padding>
 
-        <left>
+    <left>
+        <HBox>
+            <VBox spacing="10" alignment="TOP_LEFT">
+                <padding><Insets right="10" top="35"/></padding>
+                <ToggleButton fx:id="tgBtnA" text="a" onAction="#toggleButtonSelected"/>
+                <ToggleButton fx:id="tgBtnB" text="b" onAction="#toggleButtonSelected" />
+                <ToggleButton fx:id="tgBtnC" text="c" onAction="#toggleButtonSelected"/>
+                <ToggleButton fx:id="tgBtnD" text="d" onAction="#toggleButtonSelected"/>
+                <ToggleButton fx:id="tgBtnE" text="e" onAction="#toggleButtonSelected"/>
+            </VBox>
             <VBox alignment="TOP_CENTER" spacing="10">
                 <HBox spacing=" 10" alignment="CENTER">
+                    <Button text="Load" onAction="#loadListItem"/>
                     <Button text="Delete" onAction="#removeListItem"/>
                     <Button text="Show" onAction="#showListItem"/>
                 </HBox>
 
-                    <ListView fx:id="listView" prefWidth="150" prefHeight="350" />
+                <ListView fx:id="listView" prefWidth="250" prefHeight="350" />
             </VBox>
+        </HBox>
+
         </left>
         <center>
             <VBox alignment="TOP_CENTER">

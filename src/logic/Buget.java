@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Locale;
 import utill.Date;
 import utill.DateSpan;
+import utill.UserDateInput;
+
+
 /**
  * Takes two dates and value and divides it by the number of days in times-pan or the per month.
  * */
@@ -27,9 +30,7 @@ public class Buget {
             }
             return temp;
         }
-        private Date startDate;
-        private Date endDate;
-        private double money;
+        private UserDateInput userDateInput;
         private double valuePerDay;
 
         private int numberOfDays;
@@ -39,23 +40,21 @@ public class Buget {
 
         private List<DateSpan> fragments;
 
-        /***
-         * @param startDate The date from which calculations start
-         * @param endDate The date at which calculations end
-         * @param money The value to be divided.
-         * */
-        public Buget(Date startDate, Date endDate,Double money)
-        {
 
-            this.money = money;
-            this.startDate = startDate;
-            this.endDate = endDate;
+        public Buget(UserDateInput userDateInput)
+        {
+            this.userDateInput =userDateInput;
+
             fragments=calculateFragments();
             numberOfDays=calculateNumberOfDays();
             calculateValuePerDay();
             calculateValuePerDayError();
             calculateValuePerMonth();
             calculateValuePerMonthError();
+        }
+        public Buget()
+        {
+
         }
 
         /**
@@ -64,18 +63,18 @@ public class Buget {
 
         private ArrayList<DateSpan> calculateFragments()
         {
-            int mesic= startDate.getMonth();
-            int rok =startDate.getYear();
+            int mesic= userDateInput.getStart().getMonth();
+            int rok =userDateInput.getStart().getYear();
             ArrayList<DateSpan> monthly  = new ArrayList<>();
-            while(mesic <= endDate.getMonth()&&rok<=endDate.getYear()|| rok < endDate.getYear())
+            while(mesic <= userDateInput.getEnd().getMonth()&&rok<=userDateInput.getEnd().getYear()|| rok < userDateInput.getEnd().getYear())
             {
-                if(mesic == startDate.getMonth()&& rok == startDate.getYear())//first month
+                if(mesic == userDateInput.getStart().getMonth()&& rok == userDateInput.getStart().getYear())//first month
                 {
-                    monthly.add(new DateSpan(new Date(numberOfDaysInMonth(mesic, rok)-startDate.getDay()+1,mesic, rok)));
+                    monthly.add(new DateSpan(new Date(numberOfDaysInMonth(mesic, rok)-userDateInput.getStart().getDay()+1,mesic, rok)));
                 }
-                else if(mesic== endDate.getMonth()&& rok==endDate.getYear())//lastMonth
+                else if(mesic== userDateInput.getEnd().getMonth()&& rok==userDateInput.getEnd().getYear())//lastMonth
                 {
-                    monthly.add(new DateSpan(new Date(endDate.getDay(), mesic, rok)));
+                    monthly.add(new DateSpan(new Date(userDateInput.getEnd().getDay(), mesic, rok)));
                 }
                 else
                 {
@@ -110,7 +109,7 @@ public class Buget {
          * */
         private void calculateValuePerDay()
         {
-            valuePerDay= money /numberOfDays;
+            valuePerDay= userDateInput.getValue() /numberOfDays;
         }
 
         /**
@@ -118,7 +117,7 @@ public class Buget {
          * */
         private void calculateValuePerDayError()
         {
-            valuePerDayError = Math.abs((numberOfDays*valuePerDay) - money);
+            valuePerDayError = Math.abs((numberOfDays*valuePerDay) - userDateInput.getValue());
         }
 
         /**
@@ -142,7 +141,7 @@ public class Buget {
             {
                 err += valuePerDay*fragment.getAmountOfDays();
             }
-            valuePerMonthError=Math.abs(money-err);
+            valuePerMonthError=Math.abs(userDateInput.getValue()-err);
         }
 
         /**
@@ -150,7 +149,7 @@ public class Buget {
          * */
         public String getValuePerDay()
         {
-            return String.format("--------PER DAY---------%nMoney: %.2f%nNumber of days: %s%nOd data: %s%nDo data: %s%nValue per day: %.2f%nChyba: %.2f%n--------END--------%n%n",money,numberOfDays,startDate,endDate,(double)(Math.round(valuePerDay*100))/100,valuePerDayError );
+            return String.format("--------PER DAY---------%nMoney: %.2f%nNumber of days: %s%nOd data: %s%nDo data: %s%nValue per day: %.2f%nChyba: %.2f%n--------END--------%n%n",userDateInput.getValue(),numberOfDays,userDateInput.getStart(),userDateInput.getEnd(),(double)(Math.round(valuePerDay*100))/100,valuePerDayError );
         }
 
         /**
@@ -159,7 +158,7 @@ public class Buget {
         public String getValuePerMonth()
         {
             StringBuilder sb = new StringBuilder(
-                    String.format("--------PER MONTH---------%nMoney: %.2f%nOd data: %s%nDo data: %s%nPocet dni: %s%nVMalue per day: %.2f%nChyba: %.2f%n******Vycet*******%n",money,startDate,endDate,numberOfDays,(double)(Math.round(valuePerDay*100))/100,valuePerMonthError));
+                    String.format("--------PER MONTH---------%nMoney: %.2f%nOd data: %s%nDo data: %s%nPocet dni: %s%nVMalue per day: %.2f%nChyba: %.2f%n******Vycet*******%n",userDateInput.getValue(),userDateInput.getStart(),userDateInput.getEnd(),numberOfDays,(double)(Math.round(valuePerDay*100))/100,valuePerMonthError));
 
 
             for(DateSpan fragment : fragments)
@@ -176,7 +175,7 @@ public class Buget {
          **/
         public String printCsvValuePerDay()
         {
-            return String.format(Locale.US,"Castka,Pocet dni,Od data,Do data,Castka na den, chyba%n%.2f,%d,%s,%s,%.2f,%.2f", money,numberOfDays,startDate,endDate,(double)(Math.round(valuePerDay*100))/100,valuePerMonthError);
+            return String.format(Locale.US,"Castka,Pocet dni,Od data,Do data,Castka na den, chyba%n%.2f,%d,%s,%s,%.2f,%.2f", userDateInput.getValue(),numberOfDays,userDateInput.getStart(),userDateInput.getEnd(),(double)(Math.round(valuePerDay*100))/100,valuePerMonthError);
         }
 
         /**
@@ -184,7 +183,7 @@ public class Buget {
          * */
         public String printCsvValuePerMonth()
         {
-            StringBuilder sb  = new StringBuilder(String.format(Locale.US,"Castka,%.2f%nPocet dni,%s%nOd data,%s%nDo data,%s%nCastka na den,%.2f%nChyba,%.2f%n", money,numberOfDays,startDate,endDate,(double)(Math.round(valuePerDay*100))/100,valuePerMonthError));
+            StringBuilder sb  = new StringBuilder(String.format(Locale.US,"Castka,%.2f%nPocet dni,%s%nOd data,%s%nDo data,%s%nCastka na den,%.2f%nChyba,%.2f%n", userDateInput.getValue(),numberOfDays,userDateInput.getStart(),userDateInput.getEnd(),(double)(Math.round(valuePerDay*100))/100,valuePerMonthError));
             for(DateSpan fragment : fragments)
             {
                 sb.append(String.format(Locale.US,"Hodnota pro mesic(%s-%s):, %.2f%n", fragment.getMonth(),fragment.getYear(),(double)(Math.round(fragment.getValue()*100))/100));
@@ -208,7 +207,10 @@ public class Buget {
             return getValuePerMonth();
         }
 
-
+        public UserDateInput getUserDateInput()
+        {
+            return userDateInput;
+        }
     }
 
 

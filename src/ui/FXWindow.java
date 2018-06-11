@@ -15,7 +15,7 @@ public class FXWindow extends Application {
             FXWindowController controller=fxmlLoader.getController();
         controller.setPrimaryStage(primaryStage);
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 600, 450));
+        primaryStage.setScene(new Scene(root, 700, 450));
         primaryStage.show();
 
     }
