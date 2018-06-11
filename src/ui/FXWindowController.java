@@ -11,6 +11,7 @@ import logic.Buget;
 import utill.*;
 import utill.Date;
 
+import java.time.LocalDate;
 import java.util.*;
 
 
@@ -63,6 +64,7 @@ public class FXWindowController {
     public void initialize(){
         selectedSort=0;
         dateFileManager= new DateFileManager(primaryStage);
+        bugetFileManager = new BugetFileManager(primaryStage);
 
         setUpRadioButtons();
         setUpToggleButtons();
@@ -80,21 +82,34 @@ public class FXWindowController {
         if(selectedBuget!=null) {
             dateFileManager.save(selectedBuget.getUserDateInput());
         }
-        else {
-            outputTextArea.appendText(String.format("%You have to select a date in list view!"));
 
+
+    }
+    public void insertIntoInput() {
+        Buget selectedBuget = bugets.get(listView.getSelectionModel().getSelectedItem());
+        if (selectedBuget!=null) {
+            parseUserDataInputToFormInput(selectedBuget.getUserDateInput());
         }
 
     }
-    public void loadInput() {
-
+    private  void parseUserDataInputToFormInput(UserDateInput data)
+    {
+        startDatePicker.setValue(LocalDate.parse(data.getStart().toString(),Date.timeFromat));
+        endDatePicker.setValue(LocalDate.parse(data.getEnd().toString(),Date.timeFromat));
+        inputTextField.setText(Double.toString(data.getValue()));
     }
     public void clearInput(){
         inputTextField.clear();
-        startDatePicker.setValue(null);
-        endDatePicker.setValue(null);
-
-
+        clearStartDate();
+        clearEndDate();
+    }
+    public void loadInput(){
+        dateFileManager.load(null);
+        UserDateInput data =dateFileManager.getLoadedUserDataUserDateInput();
+        if(data!=null)
+        {
+            parseUserDataInputToFormInput(data);
+        }
     }
     public void submitInput(){
         String input =inputTextField.getText().trim();
@@ -123,7 +138,11 @@ public class FXWindowController {
         outputTextArea.clear();
     }
     public void saveOutput(){
-
+        Buget selectedBuget = bugets.get(listView.getSelectionModel().getSelectedItem());
+        if (selectedBuget!=null) {
+            bugetFileManager.setDaySelected(rbDays.isSelected());
+            bugetFileManager.save(selectedBuget);
+        }
     }
     public void showListItem()
     {
@@ -268,7 +287,12 @@ public class FXWindowController {
         }
         throw new IllegalArgumentException();
     }
-
+    public void clearStartDate(){
+        startDatePicker.setValue(null);
+    }
+    public  void clearEndDate(){
+        endDatePicker.setValue(null);
+    }
 
 
 }

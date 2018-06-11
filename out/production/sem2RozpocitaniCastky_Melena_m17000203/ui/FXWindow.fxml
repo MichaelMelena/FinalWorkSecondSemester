@@ -26,9 +26,11 @@
             </VBox>
             <VBox alignment="TOP_CENTER" spacing="10">
                 <HBox spacing=" 10" alignment="CENTER">
+                    <Button fx:id="inputSave" text="Save" onAction="#saveInput"  />
                     <Button text="Load" onAction="#loadListItem"/>
                     <Button text="Delete" onAction="#removeListItem"/>
                     <Button text="Show" onAction="#showListItem"/>
+                    <Button fx:id="inputInsert" text="Insert" onAction="#insertIntoInput" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
                 </HBox>
 
                 <ListView fx:id="listView" prefWidth="250" prefHeight="350" />
@@ -43,10 +45,10 @@
                     <padding><Insets  bottom="20" left="15"/></padding>
                     <Label text="Start date:" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
                     <DatePicker fx:id="startDatePicker" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="4"/>
-                    <Button  text="Clear start date" GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.columnSpan="2"/>
+                    <Button  text="Clear start date" onAction="#clearStartDate" GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.columnSpan="2"/>
                     <Label text="End date:" GridPane.rowIndex="0" GridPane.columnIndex="4" GridPane.columnSpan="2"/>
                     <DatePicker fx:id="endDatePicker" GridPane.rowIndex="1" GridPane.columnIndex="4" GridPane.columnSpan="4"/>
-                    <Button  text="Clear end date" GridPane.rowIndex="2" GridPane.columnIndex="5" GridPane.columnSpan="2"/>
+                    <Button  text="Clear end date" onAction="#clearEndDate" GridPane.rowIndex="2" GridPane.columnIndex="5" GridPane.columnSpan="2"/>
                 </GridPane>
                 <HBox alignment="CENTER_LEFT">
                     <Label fx:id="inputLabel" text="Input:"/>
@@ -54,7 +56,6 @@
                 <TextField  fx:id="inputTextField" promptText="start_date - end_date = value OR just value " />
                 <GridPane fx:id="inputGridPane" hgap="10"  alignment="CENTER">
                     <padding><Insets top="10" right="25" bottom="25" left="25"/></padding>
-                    <Button fx:id="inputSave" text="Save" onAction="#saveInput"  GridPane.columnIndex="0"  GridPane.rowIndex="0" />
                     <Button fx:id="inputLoad" text="Load" onAction="#loadInput" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
                     <Button fx:id="inputClear" text="Clear" onAction="#clearInput" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
                     <Button fx:id="inputSubmit" text="Submit" onAction="#submitInput" GridPane.columnIndex="3" GridPane.rowIndex="0"/>

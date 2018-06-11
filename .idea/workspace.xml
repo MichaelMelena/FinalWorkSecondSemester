@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/file/managers/BugetFileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/file/managers/DateFileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/file/managers/FileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utill/UserDateInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sem2RozpocitaniCastky_Melena_m17000203/logic/Buget.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sem2RozpocitaniCastky_Melena_m17000203/logic/Buget.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sem2RozpocitaniCastky_Melena_m17000203/ui/FXWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sem2RozpocitaniCastky_Melena_m17000203/ui/FXWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sem2RozpocitaniCastky_Melena_m17000203/ui/FXWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sem2RozpocitaniCastky_Melena_m17000203/ui/FXWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sem2RozpocitaniCastky_Melena_m17000203/ui/FXWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sem2RozpocitaniCastky_Melena_m17000203/ui/FXWindowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sem2RozpocitaniCastky_Melena_m17000203/utill/Date.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sem2RozpocitaniCastky_Melena_m17000203/utill/Date.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/Buget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Buget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sem2RozpocitaniCastky_Melena_m17000203/utill/BugetFileManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sem2RozpocitaniCastky_Melena_m17000203/utill/DateFileManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file/managers/BugetFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/file/managers/BugetFileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file/managers/DateFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/file/managers/DateFileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file/managers/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/file/managers/FileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/FXWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FXWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/FXWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FXWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/FXWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FXWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utill/BugetKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utill/BugetKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utill/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utill/Date.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,103 +65,30 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4707669">
+    <splitter split-orientation="horizontal" split-proportion="0.5889908">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="FileManager.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/file/managers/FileManager.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="48">
-                  <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-                  <folding>
-                    <element signature="e#1148#1149#0" expanded="true" />
-                    <element signature="e#1181#1182#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="DateFileManager.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/file/managers/DateFileManager.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="226">
-                  <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#3368#3369#0" expanded="true" />
-                    <element signature="e#3401#3402#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FXWindowController.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="FXWindowController.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/ui/FXWindowController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2256">
-                  <caret line="217" selection-start-line="217" selection-end-line="217" />
+                <state relative-caret-position="-897">
+                  <caret line="103" column="23" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
                   <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#2290#2433#0" />
-                    <element signature="e#3113#3145#0" />
-                    <element signature="e#3150#3674#0" />
-                    <element signature="e#3679#3775#0" />
-                    <element signature="e#3871#4083#0" />
-                    <element signature="e#4088#4403#0" />
-                    <element signature="e#4408#4488#0" />
-                    <element signature="e#4493#4808#0" />
-                    <element signature="e#4813#5038#0" />
-                    <element signature="e#5043#5692#0" />
-                    <element signature="e#6096#6370#0" />
-                    <element signature="e#6375#7148#0" />
+                    <element signature="e#4743#4744#0" expanded="true" />
+                    <element signature="e#4783#4784#0" expanded="true" />
+                    <element signature="e#8730#8731#0" expanded="true" />
+                    <element signature="e#8776#8777#0" expanded="true" />
+                    <element signature="e#8809#8810#0" expanded="true" />
+                    <element signature="e#8855#8856#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BugetKey.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/utill/BugetKey.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="192">
-                  <caret line="12" selection-start-line="12" selection-end-line="12" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FXMLLoader.java" pinned="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="58">
-                  <caret line="1785" selection-start-line="1785" selection-end-line="1785" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FXWindow.fxml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/ui/FXWindow.fxml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="448">
-                  <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
-                  <folding>
-                    <element signature="n#GridPane#0;n#VBox#0;n#center#0;n#BorderPane#0;n#!!top" />
-                    <element signature="n#GridPane#1;n#VBox#0;n#center#0;n#BorderPane#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-              <provider editor-type-id="JavaFX-Scene-Builder" />
             </entry>
           </file>
           <file leaf-file-name="Buget.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/logic/Buget.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2336">
+                <state relative-caret-position="714">
                   <caret line="211" column="33" selection-start-line="211" selection-start-column="33" selection-end-line="211" selection-end-column="33" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -190,6 +108,78 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="FileManager.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/file/managers/FileManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="480">
+                  <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#526#527#0" expanded="true" />
+                    <element signature="e#583#584#0" expanded="true" />
+                    <element signature="e#887#888#0" expanded="true" />
+                    <element signature="e#921#922#0" expanded="true" />
+                    <element signature="e#1286#1287#0" expanded="true" />
+                    <element signature="e#1330#1331#0" expanded="true" />
+                    <element signature="method#checkFile#0;class#FileManager#0" />
+                    <element signature="e#2778#2779#0" expanded="true" />
+                    <element signature="e#2811#2812#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="BugetFileManager.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/file/managers/BugetFileManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-4">
+                  <caret line="53" column="34" lean-forward="true" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#453#454#0" expanded="true" />
+                    <element signature="e#496#497#0" expanded="true" />
+                    <element signature="e#534#535#0" expanded="true" />
+                    <element signature="e#570#571#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DateFileManager.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/file/managers/DateFileManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="50" selection-end-column="9" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#selectLoadingMethod#0;class#DateFileManager#0" />
+                    <element signature="method#textFileSave#0;class#DateFileManager#0" />
+                    <element signature="method#binaryFileSave#0;class#DateFileManager#0" />
+                    <element signature="method#textFileLoad#0;class#DateFileManager#0" />
+                    <element signature="e#3672#3673#0" expanded="true" />
+                    <element signature="e#3722#3723#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FXWindow.fxml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/ui/FXWindow.fxml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="54">
+                  <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+                  <folding>
+                    <element signature="n#GridPane#1;n#VBox#0;n#center#0;n#BorderPane#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+              <provider editor-type-id="JavaFX-Scene-Builder" />
+            </entry>
+          </file>
         </leaf>
       </split-second>
     </splitter>
@@ -207,6 +197,9 @@
       <find>money</find>
       <find>startDate</find>
       <find>endDate</find>
+      <find>save</find>
+      <find>load</find>
+      <find>date</find>
     </findStrings>
     <replaceStrings>
       <replace>DateSpan</replace>
@@ -230,14 +223,15 @@
         <option value="$PROJECT_DIR$/src/utill/DateSpan.java" />
         <option value="$PROJECT_DIR$/src/ui/FXWindow.java" />
         <option value="$PROJECT_DIR$/src/utill/Date.java" />
-        <option value="$PROJECT_DIR$/src/ui/FXWindow.fxml" />
         <option value="$PROJECT_DIR$/src/utill/UserDateInput.java" />
         <option value="$PROJECT_DIR$/src/logic/Buget.java" />
-        <option value="$PROJECT_DIR$/src/ui/FXWindowController.java" />
         <option value="$PROJECT_DIR$/src/utill/BugetKey.java" />
         <option value="$PROJECT_DIR$/src/utill/DateFileManager.java" />
-        <option value="$PROJECT_DIR$/src/file/managers/DateFileManager.java" />
         <option value="$PROJECT_DIR$/src/file/managers/FileManager.java" />
+        <option value="$PROJECT_DIR$/src/file/managers/DateFileManager.java" />
+        <option value="$PROJECT_DIR$/src/file/managers/BugetFileManager.java" />
+        <option value="$PROJECT_DIR$/src/ui/FXWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/ui/FXWindowController.java" />
       </list>
     </option>
   </component>
@@ -451,17 +445,17 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.3295302" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.25336927" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.25336927" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.2762803" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.6703755" visible="true" weight="0.11610738" />
-      <window_info anchor="right" x="673" y="49" width="189" height="765" id="Structure" order="10" sideWeight="0.49865228" side_tool="true" weight="0.152349" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.6703755" visible="true" weight="0.11610738" />
+      <window_info active="true" anchor="right" x="673" y="49" width="189" height="765" id="Structure" order="10" sideWeight="0.49865228" side_tool="true" visible="true" weight="0.152349" />
       <window_info anchor="right" id="Ant Build" order="4" weight="0.24966443" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.39218327" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39218327" />
       <window_info id="Favorites" order="5" sideWeight="0.5013477" side_tool="true" weight="0.12281879" />
       <window_info anchor="right" id="JetGradle" order="6" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -523,21 +517,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ui/FXWindowController.java</url>
-          <line>155</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/file/managers/DateFileManager.java</url>
-          <line>30</line>
-          <properties class="utill.DateFileManager" method="save">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="20" />
+          <line>92</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/file/managers/DateFileManager.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="21" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="30" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -545,16 +540,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/utill/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/FXWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -598,19 +583,12 @@
         <state relative-caret-position="1078">
           <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2290#2433#0" />
-            <element signature="e#3113#3145#0" />
-            <element signature="e#3150#3674#0" />
-            <element signature="e#3679#3775#0" />
-            <element signature="e#3871#4083#0" />
-            <element signature="e#4088#4403#0" />
-            <element signature="e#4408#4488#0" />
-            <element signature="e#4493#4808#0" />
-            <element signature="e#4813#5038#0" />
-            <element signature="e#5043#5692#0" />
-            <element signature="e#6096#6370#0" />
-            <element signature="e#6375#7148#0" />
+            <element signature="e#4743#4744#0" expanded="true" />
+            <element signature="e#4783#4784#0" expanded="true" />
+            <element signature="e#8730#8731#0" expanded="true" />
+            <element signature="e#8776#8777#0" expanded="true" />
+            <element signature="e#8809#8810#0" expanded="true" />
+            <element signature="e#8855#8856#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -621,7 +599,6 @@
         <state relative-caret-position="1320">
           <caret line="60" selection-start-line="60" selection-end-line="60" />
           <folding>
-            <element signature="n#GridPane#0;n#VBox#0;n#center#0;n#BorderPane#0;n#!!top" />
             <element signature="n#GridPane#1;n#VBox#0;n#center#0;n#BorderPane#0;n#!!top" />
           </folding>
         </state>
@@ -670,19 +647,12 @@
         <state relative-caret-position="1071">
           <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2290#2433#0" />
-            <element signature="e#3113#3145#0" />
-            <element signature="e#3150#3674#0" />
-            <element signature="e#3679#3775#0" />
-            <element signature="e#3871#4083#0" />
-            <element signature="e#4088#4403#0" />
-            <element signature="e#4408#4488#0" />
-            <element signature="e#4493#4808#0" />
-            <element signature="e#4813#5038#0" />
-            <element signature="e#5043#5692#0" />
-            <element signature="e#6096#6370#0" />
-            <element signature="e#6375#7148#0" />
+            <element signature="e#4743#4744#0" expanded="true" />
+            <element signature="e#4783#4784#0" expanded="true" />
+            <element signature="e#8730#8731#0" expanded="true" />
+            <element signature="e#8776#8777#0" expanded="true" />
+            <element signature="e#8809#8810#0" expanded="true" />
+            <element signature="e#8855#8856#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -693,7 +663,6 @@
         <state relative-caret-position="697">
           <caret line="41" column="63" lean-forward="true" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
           <folding>
-            <element signature="n#GridPane#0;n#VBox#0;n#center#0;n#BorderPane#0;n#!!top" />
             <element signature="n#GridPane#1;n#VBox#0;n#center#0;n#BorderPane#0;n#!!top" />
           </folding>
         </state>
@@ -752,19 +721,12 @@
         <state relative-caret-position="1037">
           <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2290#2433#0" />
-            <element signature="e#3113#3145#0" />
-            <element signature="e#3150#3674#0" />
-            <element signature="e#3679#3775#0" />
-            <element signature="e#3871#4083#0" />
-            <element signature="e#4088#4403#0" />
-            <element signature="e#4408#4488#0" />
-            <element signature="e#4493#4808#0" />
-            <element signature="e#4813#5038#0" />
-            <element signature="e#5043#5692#0" />
-            <element signature="e#6096#6370#0" />
-            <element signature="e#6375#7148#0" />
+            <element signature="e#4743#4744#0" expanded="true" />
+            <element signature="e#4783#4784#0" expanded="true" />
+            <element signature="e#8730#8731#0" expanded="true" />
+            <element signature="e#8776#8777#0" expanded="true" />
+            <element signature="e#8809#8810#0" expanded="true" />
+            <element signature="e#8855#8856#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -775,7 +737,6 @@
         <state relative-caret-position="748">
           <caret line="44" column="68" selection-start-line="44" selection-start-column="68" selection-end-line="44" selection-end-column="68" />
           <folding>
-            <element signature="n#GridPane#0;n#VBox#0;n#center#0;n#BorderPane#0;n#!!top" />
             <element signature="n#GridPane#1;n#VBox#0;n#center#0;n#BorderPane#0;n#!!top" />
           </folding>
         </state>
@@ -813,19 +774,12 @@
         <state relative-caret-position="68">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2290#2433#0" />
-            <element signature="e#3113#3145#0" />
-            <element signature="e#3150#3674#0" />
-            <element signature="e#3679#3775#0" />
-            <element signature="e#3871#4083#0" />
-            <element signature="e#4088#4403#0" />
-            <element signature="e#4408#4488#0" />
-            <element signature="e#4493#4808#0" />
-            <element signature="e#4813#5038#0" />
-            <element signature="e#5043#5692#0" />
-            <element signature="e#6096#6370#0" />
-            <element signature="e#6375#7148#0" />
+            <element signature="e#4743#4744#0" expanded="true" />
+            <element signature="e#4783#4784#0" expanded="true" />
+            <element signature="e#8730#8731#0" expanded="true" />
+            <element signature="e#8776#8777#0" expanded="true" />
+            <element signature="e#8809#8810#0" expanded="true" />
+            <element signature="e#8855#8856#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -836,7 +790,6 @@
         <state relative-caret-position="119">
           <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding>
-            <element signature="n#GridPane#0;n#VBox#0;n#center#0;n#BorderPane#0;n#!!top" />
             <element signature="n#GridPane#1;n#VBox#0;n#center#0;n#BorderPane#0;n#!!top" />
           </folding>
         </state>
@@ -984,21 +937,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/FXWindow.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/utill/UserDateInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/javafx.graphics/javafx/stage/FileChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="293" selection-start-line="293" selection-end-line="293" />
           <folding>
-            <element signature="n#GridPane#0;n#VBox#0;n#center#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#GridPane#1;n#VBox#0;n#center#0;n#BorderPane#0;n#!!top" />
+            <element signature="e#10127#10128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="1669" column="34" lean-forward="true" selection-start-line="1669" selection-start-column="34" selection-end-line="1669" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#132063#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3592#3603#0" expanded="true" />
+            <element signature="e#3693#3704#0" expanded="true" />
+            <element signature="e#3792#3803#0" expanded="true" />
+            <element signature="e#3895#3912#0" expanded="true" />
+            <element signature="e#3942#3943#0" expanded="true" />
+            <element signature="e#3982#3983#0" expanded="true" />
+            <element signature="e#4721#4751#0" expanded="true" />
+            <element signature="e#6658#6659#0" expanded="true" />
+            <element signature="e#6718#6719#0" expanded="true" />
+            <element signature="e#6930#6960#0" expanded="true" />
+            <element signature="e#10515#10545#0" expanded="true" />
+            <element signature="e#33477#33507#0" expanded="true" />
+            <element signature="e#37849#37879#0" expanded="true" />
+            <element signature="e#45063#45079#0" expanded="true" />
+            <element signature="e#45910#45911#0" expanded="true" />
+            <element signature="e#45971#45972#0" expanded="true" />
+            <element signature="e#58337#58338#0" expanded="true" />
+            <element signature="e#58409#58410#0" expanded="true" />
+            <element signature="e#61199#61200#0" expanded="true" />
+            <element signature="e#61235#61236#0" expanded="true" />
+            <element signature="e#61294#61295#0" expanded="true" />
+            <element signature="e#61336#61337#0" expanded="true" />
+            <element signature="e#61850#61851#0" expanded="true" />
+            <element signature="e#61886#61887#0" expanded="true" />
+            <element signature="e#66600#66601#0" expanded="true" />
+            <element signature="e#66635#66636#0" expanded="true" />
+            <element signature="e#67657#67658#0" expanded="true" />
+            <element signature="e#67703#67704#0" expanded="true" />
+            <element signature="e#67760#67761#0" expanded="true" />
+            <element signature="e#67805#67806#0" expanded="true" />
+            <element signature="e#69270#69271#0" expanded="true" />
+            <element signature="e#69316#69317#0" expanded="true" />
+            <element signature="e#69345#69375#0" expanded="true" />
+            <element signature="e#69760#69761#0" expanded="true" />
+            <element signature="e#69806#69807#0" expanded="true" />
+            <element signature="e#70211#70212#0" expanded="true" />
+            <element signature="e#70257#70258#0" expanded="true" />
+            <element signature="e#70657#70658#0" expanded="true" />
+            <element signature="e#70703#70704#0" expanded="true" />
+            <element signature="e#72611#72619#0" expanded="true" />
+            <element signature="e#72678#72696#0" expanded="true" />
+            <element signature="e#79647#79648#0" expanded="true" />
+            <element signature="e#79722#79723#0" expanded="true" />
+            <element signature="e#80102#80103#0" expanded="true" />
+            <element signature="e#80133#80134#0" expanded="true" />
+            <element signature="e#80345#80346#0" expanded="true" />
+            <element signature="e#80381#80382#0" expanded="true" />
+            <element signature="e#80703#80704#0" expanded="true" />
+            <element signature="e#80750#80751#0" expanded="true" />
+            <element signature="e#82060#82061#0" expanded="true" />
+            <element signature="e#82113#82114#0" expanded="true" />
+            <element signature="e#84005#84006#0" expanded="true" />
+            <element signature="e#84036#84037#0" expanded="true" />
+            <element signature="e#84213#84214#0" expanded="true" />
+            <element signature="e#84253#84254#0" expanded="true" />
+            <element signature="e#84464#84465#0" expanded="true" />
+            <element signature="e#84496#84497#0" expanded="true" />
+            <element signature="e#84688#84689#0" expanded="true" />
+            <element signature="e#84730#84731#0" expanded="true" />
+            <element signature="e#84884#84885#0" expanded="true" />
+            <element signature="e#84916#84917#0" expanded="true" />
+            <element signature="e#85082#85112#0" expanded="true" />
+            <element signature="e#85140#85141#0" expanded="true" />
+            <element signature="e#85170#85171#0" expanded="true" />
+            <element signature="e#85554#85555#0" expanded="true" />
+            <element signature="e#85586#85587#0" expanded="true" />
+            <element signature="e#86546#86576#0" expanded="true" />
+            <element signature="e#86610#86611#0" expanded="true" />
+            <element signature="e#86646#86647#0" expanded="true" />
+            <element signature="e#87602#87603#0" expanded="true" />
+            <element signature="e#87639#87640#0" expanded="true" />
+            <element signature="e#87832#87833#0" expanded="true" />
+            <element signature="e#87884#87885#0" expanded="true" />
+            <element signature="e#88086#88087#0" expanded="true" />
+            <element signature="e#88126#88127#0" expanded="true" />
+            <element signature="e#88567#88568#0" expanded="true" />
+            <element signature="e#88597#88598#0" expanded="true" />
+            <element signature="e#92537#92582#0" expanded="true" />
+            <element signature="e#99035#99036#0" expanded="true" />
+            <element signature="e#99103#99104#0" expanded="true" />
+            <element signature="e#108453#108454#0" expanded="true" />
+            <element signature="e#108525#108526#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utill/BugetKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/file/managers/DateFileManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="50" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#selectLoadingMethod#0;class#DateFileManager#0" />
+            <element signature="method#textFileSave#0;class#DateFileManager#0" />
+            <element signature="method#binaryFileSave#0;class#DateFileManager#0" />
+            <element signature="method#textFileLoad#0;class#DateFileManager#0" />
+            <element signature="e#3672#3673#0" expanded="true" />
+            <element signature="e#3722#3723#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/Buget.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2336">
+        <state relative-caret-position="714">
           <caret line="211" column="33" selection-start-line="211" selection-start-column="33" selection-end-line="211" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1017,78 +1094,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/FXWindowController.java">
+    <entry file="file://$PROJECT_DIR$/src/file/managers/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2256">
-          <caret line="217" selection-start-line="217" selection-end-line="217" />
+        <state relative-caret-position="480">
+          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2290#2433#0" />
-            <element signature="e#3113#3145#0" />
-            <element signature="e#3150#3674#0" />
-            <element signature="e#3679#3775#0" />
-            <element signature="e#3871#4083#0" />
-            <element signature="e#4088#4403#0" />
-            <element signature="e#4408#4488#0" />
-            <element signature="e#4493#4808#0" />
-            <element signature="e#4813#5038#0" />
-            <element signature="e#5043#5692#0" />
-            <element signature="e#6096#6370#0" />
-            <element signature="e#6375#7148#0" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#1286#1287#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="method#checkFile#0;class#FileManager#0" />
+            <element signature="e#2778#2779#0" expanded="true" />
+            <element signature="e#2811#2812#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="1785" selection-start-line="1785" selection-end-line="1785" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utill/BugetKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utill/UserDateInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/file/managers/BugetFileManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/file/managers/DateFileManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="-4">
+          <caret line="53" column="34" lean-forward="true" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3368#3369#0" expanded="true" />
-            <element signature="e#3401#3402#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/file/managers/FileManager.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/FXWindow.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state relative-caret-position="54">
+          <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
           <folding>
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="n#GridPane#1;n#VBox#0;n#center#0;n#BorderPane#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/FXWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-897">
+          <caret line="103" column="23" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
+          <folding>
+            <element signature="e#4743#4744#0" expanded="true" />
+            <element signature="e#4783#4784#0" expanded="true" />
+            <element signature="e#8730#8731#0" expanded="true" />
+            <element signature="e#8776#8777#0" expanded="true" />
+            <element signature="e#8809#8810#0" expanded="true" />
+            <element signature="e#8855#8856#0" expanded="true" />
           </folding>
         </state>
       </provider>
